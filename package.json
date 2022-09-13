@@ -1,0 +1,19 @@
+{
+  "name": "petlove",
+  "version": "1.0.0",
+  "description": "Extrai no site petlove.com.br os valores de ração seca e ordena por melhor valor por Kg",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "puppeteer",
+    "petlove",
+    "ração"
+  ],
+  "author": "Elton Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^17.1.3"
+  }
+}

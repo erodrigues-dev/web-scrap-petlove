@@ -1,19 +1,28 @@
 {
   "name": "petlove",
   "version": "1.0.0",
+  "author": "Elton Rodrigues",
+  "license": "ISC",
   "description": "Extrai no site petlove.com.br os valores de ração seca e ordena por melhor valor por Kg",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "type": "module",
+  "engines": {
+    "node": "18"
   },
   "keywords": [
     "puppeteer",
     "petlove",
     "ração"
   ],
-  "author": "Elton Rodrigues",
-  "license": "ISC",
+  "scripts": {
+    "start:crons": "node src/cron/startAllCrons.js",
+    "debug:crons": "nodemon --inspect src/cron/startAllCrons.js"
+  },
   "dependencies": {
+    "node-cron": "^3.0.2",
     "puppeteer": "^17.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

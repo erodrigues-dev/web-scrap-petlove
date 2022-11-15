@@ -19,14 +19,14 @@ export class FoodParser {
     const name = await this._getName()
     const link = await this._getLink()
     const price = await this._getPrice()
-    const weight = this._getWeight(name)
-    const priceByKg = this._getPriceByKg(price, weight)
+    const weightInKg = this._getWeight(name)
+    const priceByKg = this._getPriceByKg(price, weightInKg)
 
     return {
       name,
       link,
       price,
-      weight,
+      weightInKg,
       priceByKg,
     }
   }

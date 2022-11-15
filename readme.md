@@ -1,11 +1,15 @@
 # 🐶 Web Scraping (petlove.com.br)
 
-Este projeto gera uma lista de preços formato json
 
 ## [Use meu cupom e ganhe 25% de desconto no site](https://www.petlove.com.br/?coupon=@ERO891886)
 
 ![](images/coupon.png)
 
+
+## Funcionalidades
+
+- Executa uma busca por preços 1x por semana de forma agendada
+- TODO: Notificar por whatsapp 1x por semana de forma agendada
 
 ## JSON format
 

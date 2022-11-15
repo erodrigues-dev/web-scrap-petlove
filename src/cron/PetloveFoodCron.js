@@ -14,7 +14,7 @@ export class PetloveFoodCron {
       {
         time: '0 9 * * 1', // At 09:00 on Monday.
         name: 'list foods',
-        handler: () => this._getFiveBetterFoods(),
+        handler: () => this._notifyBetterFoods(),
       },
     ]
   }
@@ -37,11 +37,14 @@ export class PetloveFoodCron {
     console.log('--------------------------------------------------------')
   }
 
-  async _getFiveBetterFoods() {
+  async _notifyBetterFoods() {
     console.log('--------------------------------------------------------')
     console.log('this is a list of better five foods in PetLove')
     const list = await this.service.getFiveBetterItems()
     console.log(JSON.stringify(list, null, 2))
+
+    // TODO: implement notify by whatsapp
+
     console.log('--------------------------------------------------------')
   }
 }
